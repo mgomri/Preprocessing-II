@@ -1,1 +1,38 @@
 // Mixins in here
+.mydisplay(@disp, @direction, @wrap, @justify, @align){
+    display: @disp;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+
+}
+
+.trim-center(){
+    margin: auto;
+    width:80%;
+    padding:2rem 0;
+}
+
+.trim-center2(){
+  margin:auto;
+  width:80%;
+  padding-top:5rem;
+}
+
+.mywidth(){
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.button-style(@width, @height, @bg, @color, @border-rad, @font){
+    width:@width;
+    height:@height;
+    background-color: @bg;
+    color: @color;
+    border-radius:@border-rad;
+    font-size:@font;
+
+}

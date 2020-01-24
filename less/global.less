@@ -12,6 +12,7 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
+  font-weight:bold;
 }
 
 h1 {
@@ -34,13 +35,27 @@ p {
   padding-bottom: 10px;
 }
 
+a{
+  font-size: 1.6rem;
+  color:@font-color;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
+.btn{
+  .button-style(20rem, 4rem, @button-bg, @main-bg, 12%, 2rem);
+  .mydisplay(flex, row, nowrap, center, center);
+  @media @mobile{
+    width:100%;
+  }
+
+}
+
+
+
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  .mywidth();
 }
