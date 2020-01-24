@@ -214,9 +214,6 @@ img {
   width: 80%;
   padding: 2rem 0;
 }
-.home .welcome {
-  border-bottom: 2px dashed #C0C0C0;
-}
 .home .welcome img {
   border-top: 2px dashed #C0C0C0;
   padding: 0 10%;
@@ -228,6 +225,7 @@ img {
   padding: 0 10% 2rem 10%;
 }
 .home .content-section {
+  border-top: 2px dashed #C0C0C0;
   margin: auto;
   width: 80%;
   padding-top: 5rem;
