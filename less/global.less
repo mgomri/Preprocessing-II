@@ -47,7 +47,10 @@ img {
 
 .btn{
   .button-style(20rem, 4rem, @button-bg, @main-bg, 12%, 2rem);
-  .mydisplay(flex, center, center);
+  .mydisplay(flex, row, nowrap, center, center);
+  @media @mobile{
+    width:100%;
+  }
 
 }
 

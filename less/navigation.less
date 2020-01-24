@@ -1,13 +1,24 @@
 // Navigation Styles here
 .nav-and-logo{
-    .mydisplay(flex, space-between, center);
+
+    .mydisplay(flex, row, nowrap, space-between, center);
+
+    @media @mobile{
+      .mydisplay(flex, column, nowrap, flex-end, center);
+    }
 
     nav{
-        
         width:50%;
-        .mydisplay(flex, space-around, center);
+        .mydisplay(flex, row, nowrap, space-around, center);
+
         a{
             text-decoration: none;
         }
+
+        @media @mobile{
+          width:100%;
+          margin-top:1.5rem;
+        }
     }
+
 }
