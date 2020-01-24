@@ -1,13 +1,36 @@
 .home {
 
+  .nav-and-logo{
+    .trim-center();
+
+  }
+
+  .welcome{
+
+    border-bottom: 2px dashed @navigation-border;
+
+    img{
+      // margin: 0 auto 2rem auto;
+      border-top: 2px dashed @navigation-border;
+      padding: 0 10%;
+    }
+
+    h1{
+       padding: 2rem 10% 0 10%;
+    }
+
+    p{
+      padding: 0 10% 2rem 10%;
+    }
+  }
   .content-section {
-    margin: 30px 0;
+    .trim-center2();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -22,6 +45,7 @@
       }
     }
   }
+
 
   .inverse-content {
     padding-bottom: 30px;
@@ -45,13 +69,19 @@
     img {
       border-radius: 10px;
     }
+
+    .content-destination-child{
+      .trim-center();
+    }
   }
 
   .content-pick {
-    padding-top: 30px;
+    // padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    align-items:flex-end;
+    .trim-center2();
 
     .destination {
       width: 30%;
